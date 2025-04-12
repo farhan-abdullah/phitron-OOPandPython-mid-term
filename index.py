@@ -19,8 +19,8 @@ class StudentDatabase:
                 return True
         return False
     @classmethod
-    def get_student_by_id(cls, student_id):
-        for student in cls._student_list:
+    def get_student_by_id(self, student_id):
+        for student in self._student_list:
             if student.student_id == student_id:
                 return student
         return None
